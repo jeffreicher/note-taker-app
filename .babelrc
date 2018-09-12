@@ -1,4 +1,4 @@
 {
-  "plugins": ["source-map-support", "transform-runtime"],
-  "presets": [["env", { "node": "8.10" }], "react"]
+  "plugins": ["source-map-support", "@babel/plugin-transform-runtime"],
+  "presets": ["@babel/preset-env"]
 }
