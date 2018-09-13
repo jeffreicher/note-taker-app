@@ -24,14 +24,13 @@ export default class Login extends Component {
 
     try {
       await Auth.signIn(this.state.email, this.state.password);
-      alert("Signed in");
+      this.props.userHasAuthenticated(true);
     } catch (e) {
       alert(e.message);
     }
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="login">
         <form onSubmit={this.handleSubmit}>
