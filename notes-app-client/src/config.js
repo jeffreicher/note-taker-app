@@ -1,7 +1,7 @@
 export default {
   s3: {
     REGION: "us-east-2",
-    BUCKET: "notesfile-upload"
+    BUCKET: "notesfile-uploads"
   },
   apiGateway: {
     REGION: "us-east-2",
